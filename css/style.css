@@ -570,12 +570,13 @@ a:focus {
 
 .experiences{
     position: relative;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
+    margin: 0px 0px 5% 0px;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: hsl(0, 0%, 100%);
 
 }
 /* Gauche Experience */
@@ -583,6 +584,9 @@ a:focus {
 .Proof {
     position: relative;
     width: 50% !important;
+    background-color: #238cef;
+    box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
 }
 .timeline {
     position: relative;
@@ -598,6 +602,8 @@ a:focus {
     bottom: 0;
     left: 50%;
     margin-left: -1px;
+    
+
 }
 
 .Proof .timeline .timeline-item {
@@ -644,6 +650,7 @@ a:focus {
   z-index: 1;
   border: 10px solid;
   border-color: transparent transparent transparent #dddddd;
+  
 }
 
 .Proof .timeline .timeline-item.right::before {
@@ -679,7 +686,15 @@ a:focus {
     position: relative;
     border-right: 5px solid #dddddd;
     box-shadow: 0 0 60px rgba(0, 0, 0, .08);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
+.Proof .timeline .timeline-text:hover{
+    border-right: 5px solid #070707;
+}
+.Proof .timeline .timeline-item.right .timeline-text:hover {
+    border-left: 5px solid #000000;
+}
+
 
 .Proof .timeline .timeline-item.right .timeline-text {
     border-right: none;
@@ -711,6 +726,8 @@ a:focus {
 .Formas {
     position: relative;
     width: 50% !important;
+    background-color: #dddddd;
+    overflow: hidden;
 }
 .Formas .timeline {
     position: relative;
@@ -791,6 +808,12 @@ a:focus {
     z-index: 1;
 }
 
+.Formas .timeline .timeline-text:hover{
+    border-right: 5px solid #238cef;
+}
+.Formas .timeline .timeline-item.right .timeline-text:hover {
+    border-left: 5px solid #238cef;
+}
 .Formas .timeline .timeline-item.left .timeline-date {
     text-align: left;
     left: calc(100% + 55px);
@@ -1004,12 +1027,6 @@ a:focus {
 /*******************************/
 /******** Portfolio ********/
 /*******************************/
-.separat{
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-}
 .portfolio {
     position: relative;
     padding: 45px 0 15px 0;
@@ -1349,3 +1366,32 @@ body{
 }
 
 /* fin SVG */
+
+/* Footer reseau */
+
+/* egeon effect */
+
+/* egeon effect */
+.effect.egeon a {
+    transition: transform 0.2s linear 0s, border-radius 0.2s linear 0.2s;
+  }
+  .effect.egeon a i {
+    transition: transform 0.2s linear 0s;
+  }
+  .effect.egeon a:hover {
+    transform: rotate(-90deg);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .effect.egeon a:hover i {
+    transform: rotate(90deg);
+  }
+  
+.MailMe a:hover, .MailMe a:active{
+    color: #fff !important;
+}
+.MailMe a:visited{
+    color: #111111 !important;
+}
+/* fin Reseaux */
