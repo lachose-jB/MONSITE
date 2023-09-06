@@ -153,14 +153,17 @@ a:focus {
 
 .navbar .navbar-brand {
     margin: 0;
-    width: 10%;
+    bottom: 10px;
+    width: 25%;
+    height: 100px;
+    position: relative;
     transition: .5s;
     
 }
 
 .navbar .navbar-brand img {
-    max-width: 100%;
-    max-height: 100px;
+    width: 100%;
+    max-height:auto
 }
 
 .navbar .dropdown-menu {
@@ -493,10 +496,10 @@ a:focus {
 .about .about-img {
     position: relative;
     height: 100%;
-    box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     border-radius: 20px;
-    background: linear-gradient(rgba(255, 255, 255, 0.95),#d7f3ee);
+    background: #fff;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

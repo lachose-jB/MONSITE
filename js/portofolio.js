@@ -196,7 +196,6 @@ class MenuApp {
       document.addEventListener("mousemove", Mouse.handleMouseMove);
       document.addEventListener("click", () => {
           if (!this.start) {
-              console.log("here I start");
               this.start = true;
           }
       });
